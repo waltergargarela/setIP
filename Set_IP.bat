@@ -1,18 +1,18 @@
 @echo off
 :MENU
 echo ========================================
-echo         Selecione a Opção Desejada      
+echo         Selecione a Opcao Desejada      
 echo ========================================
 echo 1. Configurar Rede para DHCP
 echo 2. Configurar Rede para IP Fixo
 echo 3. Sair
 echo ========================================
-set /p option="Escolha uma opção (1-3): "
+set /p option="Escolha uma opcao (1-3): "
 
 if %option%==1 goto DHCP
 if %option%==2 goto IPFIXO
 if %option%==3 goto EXIT
-echo Opção inválida, tente novamente.
+echo Opcao invalida, tente novamente.
 goto MENU
 
 :DHCP
@@ -22,7 +22,7 @@ echo ========================================
 netsh interface ip set address name="Ethernet" source=dhcp
 netsh interface ip set dns name="Ethernet" source=dhcp
 echo ========================================
-echo        Configuração Concluída           
+echo        Configuracao Concluida           
 echo ========================================
 pause
 goto MENU
@@ -38,7 +38,7 @@ netsh interface set interface name="Ethernet" admin=disable
 
 netsh interface set interface name="Ethernet" admin=enable
 echo ========================================
-echo        Configuração Concluída           
+echo        Configuracao Concluida           
 echo ========================================
 pause
 goto MENU
