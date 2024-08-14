@@ -1,4 +1,13 @@
 @echo off
+REM ========================================================
+REM  Script desenvolvido para uso exclusivo e controlado 
+REM   por pessoal técnico da COTIC/INPE 
+REM  Proibido o uso ou replicação desse script de forma não autorizada
+REM  
+REM Date: 08/08/2024
+REM Created: Walter Gargarela Junior walter.garagrela@gmail.com
+REM
+REM ========================================================
 :MENU
 echo ========================================
 echo         Selecione a Opcao Desejada      
