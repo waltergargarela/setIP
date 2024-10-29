@@ -40,9 +40,9 @@ goto MENU
 echo ========================================
 echo        Configurando Rede para IP Fixo   
 echo ========================================
-netsh interface ip set address name="Ethernet" static 150.163.62.59 255.255.255.0 150.163.62.254
-netsh interface ipv4 set dns name="Ethernet" static 150.163.73.154
-netsh interface ipv4 add dnsservers "Ethernet" 150.163.105.9 index=2
+netsh interface ip set address name="Ethernet" static 150.163.XX.XX 255.255.255.0 150.163.XX.254
+netsh interface ipv4 set dns name="Ethernet" static 150.163.XX.XXX
+netsh interface ipv4 add dnsservers "Ethernet" 150.163.XXX.XX index=2
 netsh interface set interface name="Ethernet" admin=disable
 
 netsh interface set interface name="Ethernet" admin=enable
